@@ -23,8 +23,15 @@ The intention of this project is to define a basic scheme for start working on a
 
 </br>
 
+## Setup the project environment
+---
+Crete a `.env` file inside `/compose-fullstack-app` folder, copy the content of `env.example` file and paste it inside the `.env` file.
+
+</br>
+
 ## Run the project in the development environment
 ---
+
 
 For building a development docker image a few Makefiles were introduced to execute the docker build and docker run commands. For running the project in your local dev environment you need to execute the following command.
 
@@ -52,3 +59,10 @@ $ make run-production
 </br>
 
 > Note: The very first time you run this command could take a while because the docker images need to be builded.
+
+</br>
+<footer style="font-family: Helvetica">
+<h3>
+Repository maintained by David Tissera - https://www.github.com/davidtissera
+</h3>
+</footer>
