@@ -9,9 +9,9 @@ services:
     volumes:
       - ../containerized-frontend:/usr/src/app
       - frontend_node_modules:/usr/src/app/node_modules
-    container_name: docker-course-frontend-development
+    container_name: frontend-development
     command: npm run start:dev
-    image: docker-course-frontend-development
+    image: frontend-development
     ports:
       - ${FRONTEND_PORT}:${FRONTEND_PORT}
     env_file:
@@ -19,9 +19,9 @@ services:
     networks:
       - nestjs-network-development
   backend:
-    container_name: docker-course-backend-development
+    container_name: backend-development
     command: npm run start:dev
-    image: docker-course-backend-development
+    image: backend-development
     ports:
       - ${BACKEND_PORT}:${BACKEND_PORT}
     depends_on:

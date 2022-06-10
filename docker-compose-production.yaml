@@ -1,8 +1,8 @@
 version: '3'
 services:
   frontend:
-    container_name: docker-course-frontend-production
-    image: docker-course-frontend-production
+    container_name: frontend-production
+    image: 076859696113.dkr.ecr.us-east-1.amazonaws.com/frontend-production:1.0
     ports:
       - "81:80"
     build:
@@ -13,8 +13,8 @@ services:
     networks:
       - nestjs-network-production
   backend:
-    container_name: docker-course-backend-production
-    image: docker-course-backend-production
+    container_name: backend-production
+    image: 076859696113.dkr.ecr.us-east-1.amazonaws.com/backend-production:1.0
     ports:
       - "82:80"
     depends_on:
