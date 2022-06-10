@@ -1,0 +1,4 @@
+.env
+/database
+
+docker-compose-backup.yaml
